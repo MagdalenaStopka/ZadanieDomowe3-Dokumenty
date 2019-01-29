@@ -39,10 +39,7 @@ namespace ZadanieDomowe3_Dokumenty
             manager.SaveAllData();
         }
 
-        private static void ModyfikujDokument()
-        {
-            throw new NotImplementedException();
-        }
+        
 
         private static void WyswietlMenu()
         {
@@ -81,6 +78,24 @@ namespace ZadanieDomowe3_Dokumenty
 
 
         }
+        private static void ModyfikujDokument()
+        {
+            Console.WriteLine("Podaj nzwę dokumentu DO modyfikacji:");
+            string nazwa = Console.ReadLine();
+           
+            Console.WriteLine("Podaj treść dokumentu PO modyfikacji:");
+            string tresc = Console.ReadLine();
+
+            DocumentDTO dto = new DocumentDTO();
+            dto.Name = nazwa;
+            dto.Content = tresc;
+            manager.DeleteDocument(dto);
+
+            manager.AddDocument(new DocumentDTO() { Name = nazwa, Content = tresc });
+
+
+
+        }
 
         private static void DodajDokument()
         {
@@ -114,16 +129,6 @@ namespace ZadanieDomowe3_Dokumenty
                 Console.WriteLine("Nazwa: {0} Treść: {1}", dto.Name, dto.Content);
             }
         }
-
-        private static void ModyfikujDokumenty()
-        {
-            Console.WriteLine("Podaj nazwę");
-            string nazwa = Console.ReadLine();
-
-            Console.WriteLine("Podaj treść");
-            string tresc = Console.ReadLine();
-        }
-
 
     }
 }

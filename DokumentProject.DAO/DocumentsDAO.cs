@@ -16,8 +16,8 @@ namespace DocumentProject.DAO
         public DocumentsDAO()
         {
 
-            Initialize();
-            SaveDataToFile(_documents);
+            //Initialize();
+            //SaveDataToFile(_documents);
 
             _documents = ReadDataFromFile();
         }
@@ -44,11 +44,7 @@ namespace DocumentProject.DAO
         {
             _documents.Remove(document);
         }
-        public void ModifyDocument(Document document)
-        {
-            _documents.(document);
-        }
-
+       
 
         private void Initialize()
         {

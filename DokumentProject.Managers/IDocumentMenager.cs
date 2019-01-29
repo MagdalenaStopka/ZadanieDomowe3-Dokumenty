@@ -12,6 +12,6 @@ namespace DocumentProject.Managers
         void AddDocument(DocumentDTO dto);
         List<DocumentDTO> GetAllDocuments();
         void SaveAllData();
-        void ModifyDocument(DocumentDTO dto);
+        
     }
 }

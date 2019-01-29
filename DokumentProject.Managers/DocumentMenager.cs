@@ -81,13 +81,5 @@ namespace DocumentProject.Managers
             dao.SaveAllChanges();
         }
 
-        public void ModifyDocument(DocumentDTO dto)
-        {
-            Document d = null;
-            var documents = dao.GetAllDocuments();
-            var documentToModify = documents.Where(x => x.Name.ToUpper() == dto.Name.ToUpper());
-
-            dao.ModifyDocument
-        }
     }
 }
