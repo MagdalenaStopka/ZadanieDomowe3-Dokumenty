@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using static DocumentProject.Managers.Exceptions.DocumentExceptions;
 
 namespace DocumentProject.Managers
 {
@@ -81,5 +82,17 @@ namespace DocumentProject.Managers
             dao.SaveAllChanges();
         }
 
+        public void ModifyDocument(DocumentDTO dto)
+        {
+
+            var documents = dao.GetAllDocuments();
+            var documentToModify = documents.Where(x => x.Name.ToUpper() == dto.Name.ToUpper()).FirstOrDefault();
+
+            if (documentToModify == null)
+                throw new DocumentNotFoundException("brak takiego dokumentu");
+
+            documentToModify.Content = dto.Content;
+            var documents3 = dao.GetAllDocuments();
+        }
     }
 }

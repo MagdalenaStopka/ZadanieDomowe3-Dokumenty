@@ -89,9 +89,12 @@ namespace ZadanieDomowe3_Dokumenty
             DocumentDTO dto = new DocumentDTO();
             dto.Name = nazwa;
             dto.Content = tresc;
-            manager.DeleteDocument(dto);
+            manager.ModifyDocument(dto);
 
-            manager.AddDocument(new DocumentDTO() { Name = nazwa, Content = tresc });
+            
+            //manager.DeleteDocument(dto);
+
+           // manager.AddDocument(new DocumentDTO() { Name = nazwa, Content = tresc });
 
 
 
