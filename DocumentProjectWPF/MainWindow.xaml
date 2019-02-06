@@ -1,0 +1,38 @@
+﻿<Window x:Class="DocumentProjectWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DocumentProjectWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="37*"/>
+            <ColumnDefinition Width="51*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="WyswietlPracownikowBTN" Content="Wyswietl Pracownikow" HorizontalAlignment="Left" Margin="41,27,0,0" VerticalAlignment="Top" Width="150" Click="WyswietlPracownikowBTN_Click"/>
+        <TextBox x:Name="NazwaDokumentuTxtBox" Text="" Width="143" HorizontalAlignment="Left" Margin="71,86,0,307" />
+        <TextBox x:Name="trescDokumentuTxtBox" Text="" Width="297" Height="20" HorizontalAlignment="Left" Margin="71,118,0,282" Grid.ColumnSpan="2" />
+        <Label Content="Nazwa" HorizontalAlignment="Left" Margin="0,86,0,0" VerticalAlignment="Top" Width="86"/>
+        <Label Content="Treść" HorizontalAlignment="Left" Margin="0,111,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,0.077" Width="86"/>
+        <Button x:Name="DodajDokumentBtn" Content="Dodaj dokument" HorizontalAlignment="Left" Margin="131,157,0,0" VerticalAlignment="Top" Width="209" Click="DodajDokumentBtn_Click" Grid.ColumnSpan="2"/>
+        <ListView x:Name="ListaPracownikowListView" HorizontalAlignment="Left" Height="96" Margin="8,188,0,0" VerticalAlignment="Top" Width="456" SelectionChanged="ListaPracownikowListView_SelectionChanged" Grid.ColumnSpan="2">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="OdswiezListeBTN" Content="Odswiez liste" HorizontalAlignment="Left" Margin="96,289,0,0" VerticalAlignment="Top" Width="75" Click="OdswiezListeBTN_Click"/>
+        <Button x:Name="EdytujWybranegoBTN" Content="Edytuj" HorizontalAlignment="Left" Margin="11,375,0,0" VerticalAlignment="Top" Width="75" Click="EdytujWybranego_Click"/>
+        <TextBox IsReadOnly="True" x:Name="EdytowanyNazwa" HorizontalAlignment="Left" Height="23" Margin="11,320,0,0" TextWrapping="Wrap" Text="Nazwa dokumentu do edycji" VerticalAlignment="Top" Width="180"/>
+        <TextBox x:Name="EdytowanyTresc" HorizontalAlignment="Left" Height="23" Margin="11,347,0,0" TextWrapping="Wrap" Text="Treść dokumentu do edycji" VerticalAlignment="Top" Width="180"/>
+        <Button x:Name="ZapiszBTN" Content="zapisz" HorizontalAlignment="Left" Margin="91,375,0,0" VerticalAlignment="Top" Width="75" Click="ZapiszBTN_Click"/>
+        <TextBox x:Name="UsuwanyNazwa" HorizontalAlignment="Left" Height="23" Margin="326,320,0,0" TextWrapping="Wrap" Text="Nazwa dokumentu do usunięcia" VerticalAlignment="Top" Width="198" TextChanged="UsuwanyNazwa_TextChanged" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="UsuwanyTresc" HorizontalAlignment="Left" Height="23" Margin="326,348,0,0" TextWrapping="Wrap" Text="Treść dokumentu do usunięcia" VerticalAlignment="Top" Width="198" TextChanged="UsuwanyTresc_TextChanged" Grid.ColumnSpan="2"/>
+        <Button x:Name="UsunDokumentBTN" Content="Usuń" HorizontalAlignment="Left" Margin="316,375,0,0" VerticalAlignment="Top" Width="75" Click="UsunDokumentBTN_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="ZapiszUsuwanyDokumentBTN" Content="Zapisz" HorizontalAlignment="Left" Margin="63.321,376,0,0" VerticalAlignment="Top" Width="75" Click="ZapiszDokumentBTN_Click" Grid.Column="1"/>
+        <Button x:Name="ZapiszWszystkieZmianyBTN"  Content="Zapisz wszystkie zmiany" HorizontalAlignment="Left" Margin="260.321,214,0,0" VerticalAlignment="Top" Width="138" Height="55" Click="ZapiszWszystkieZmianyBTN_Click" Grid.Column="1"/>
+    </Grid>
+</Window>

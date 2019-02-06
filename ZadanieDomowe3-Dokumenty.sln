@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentProjectWinForms", "ZadanieDomowe3-Dokumenty\DocumentProjectWinForms.csproj", "{DB845250-2A4A-4A64-9A6E-5D6B6F676A7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentProjectConsole", "ZadanieDomowe3-Dokumenty\DocumentProjectConsole.csproj", "{DB845250-2A4A-4A64-9A6E-5D6B6F676A7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentProject.Models", "DokumentProject.Models\DocumentProject.Models.csproj", "{BC26F6C5-B683-4E07-AE4A-3F08111C021D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentProject.Models", "DokumentProject.Models\DocumentProject.Models.csproj", "{BC26F6C5-B683-4E07-AE4A-3F08111C021D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentProject.Managers", "DokumentProject.Managers\DocumentProject.Managers.csproj", "{21A919DC-042C-4D85-80A2-29DC8C6D91EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentProject.Managers", "DokumentProject.Managers\DocumentProject.Managers.csproj", "{21A919DC-042C-4D85-80A2-29DC8C6D91EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentProject.DAO", "DokumentProject.DAO\DocumentProject.DAO.csproj", "{7D945EA5-1C8E-4DB5-BA6E-097230DABD1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentProject.DAO", "DokumentProject.DAO\DocumentProject.DAO.csproj", "{7D945EA5-1C8E-4DB5-BA6E-097230DABD1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentProjectWPF", "DocumentProjectWPF\DocumentProjectWPF.csproj", "{CBFA9B2C-4D36-44FF-9AB6-616662A779FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{7D945EA5-1C8E-4DB5-BA6E-097230DABD1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D945EA5-1C8E-4DB5-BA6E-097230DABD1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D945EA5-1C8E-4DB5-BA6E-097230DABD1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBFA9B2C-4D36-44FF-9AB6-616662A779FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBFA9B2C-4D36-44FF-9AB6-616662A779FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBFA9B2C-4D36-44FF-9AB6-616662A779FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBFA9B2C-4D36-44FF-9AB6-616662A779FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

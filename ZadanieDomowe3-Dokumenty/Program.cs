@@ -11,7 +11,7 @@ namespace ZadanieDomowe3_Dokumenty
 {
     class Program
     {
-        static IDocumentMenager manager = new DocumentMenager();
+        static IDocumentMenager manager;
 
         static void Main(string[] args)
         {

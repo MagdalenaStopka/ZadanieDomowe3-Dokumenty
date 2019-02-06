@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ArrayOfDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Document>
+    <Name>Buty</Name>
+    <Content>Musisz koniecznie kupić buty</Content>
+  </Document>
+  <Document>
+    <Name>Smieci</Name>
+    <Content>Wynies śmieci</Content>
+  </Document>
+  <Document>
+    <Name>Umyj</Name>
+    <Content>umyj naczynia</Content>
+  </Document>
+</ArrayOfDocument>

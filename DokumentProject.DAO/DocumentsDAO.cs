@@ -8,12 +8,21 @@ using System.Xml.Serialization;
 
 namespace DocumentProject.DAO
 {
-   public class DocumentsDAO
+    public class DocumentsDAO
     {
-        private const string fileName = "documents.xml";
+        private const string fileName = @"../../../documents.xml";
         private List<Document> _documents;
 
-        public DocumentsDAO()
+        private static DocumentsDAO instance;
+
+        public static DocumentsDAO GetInstance()
+        {
+            if (instance == null)
+                instance = new DocumentsDAO();
+            return instance;
+        }
+
+        private DocumentsDAO()
         {
 
             //Initialize();
@@ -44,7 +53,7 @@ namespace DocumentProject.DAO
         {
             _documents.Remove(document);
         }
-       
+
 
         private void Initialize()
         {

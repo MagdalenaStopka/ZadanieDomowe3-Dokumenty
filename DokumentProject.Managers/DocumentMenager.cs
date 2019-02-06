@@ -15,9 +15,19 @@ namespace DocumentProject.Managers
 
         DocumentsDAO dao;
 
-        public DocumentMenager()
+        private static DocumentMenager instance;
+
+        private DocumentMenager()
         {
-            dao = new DocumentsDAO();
+            dao = DocumentsDAO.GetInstance();
+        }
+
+        public static DocumentMenager GetInstance()
+        {
+            if (instance == null)
+                instance = new DocumentMenager();
+
+            return instance;
         }
 
         public List<DocumentDTO> GetAllDocuments()
@@ -75,7 +85,7 @@ namespace DocumentProject.Managers
             dao.DeleteDocument(d);
         }
 
-      
+
 
         public void SaveAllData()
         {
